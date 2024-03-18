@@ -1,0 +1,414 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;1,900&family=Roboto+Flex:opsz,wght@8..144,200;8..144,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+@font-face {
+    font-family: 'Cashrole' ;
+    src: url(./assests/fonts/Cashrole.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+}
+
+/* Root */
+:root {
+    
+    --color-primary: #000;
+    --color-secundary: #fff;
+    --font-family-one: 'Roboto Flex', sans-serif;
+    --font-family-two: 'Inter Tight', sans-serif;
+    --font-family-three: 'Playfair Display', serif;
+    --font-family-four: 'Cashrole', serif;
+    --font-family-five: 'Grape Nuts', cursive;
+     --glass-effect: #fafafa10;
+     --color-smoke: #84837D;
+     --font-size-p: 1.2rem;
+    --font-size-h1: 4.5rem;
+}
+
+ 
+/* Hero Section */
+ .hero{
+    background-image: url(./assests/images/jeremy-bishop-rqWoB4LFgmc-unsplash.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    background-attachment: fixed;
+
+}
+.container-hero h1 {
+    font-size: 4.5rem;
+    display: flex;  
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: rotate(-90deg);
+    color: var(--color-secundary)
+    
+}
+.withe-line{
+    width: 15%;
+    height: 1px;
+    background-color: var(--color-secundary);
+    position: absolute;
+    top: 30%;
+    left: 29%;
+    transform: rotate(-90deg);
+}
+.intro p{
+    font-size: 1.2rem;
+    font-family: var(--font-family-two);
+    color: var(--color-secundary);
+    margin-left: 13%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 20px 30%; 
+} 
+
+.intro p {
+    font-size: 14px;
+    font-family: var(--font-family-two);
+    color: var(--color-secundary);
+    padding: 33px 8%;
+    max-width: 80%; /* Limit width of text */
+    text-align: center; /* Center align text */
+}
+/* Navbar Section */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Roboto Flex';
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    z-index: 1000; 
+}
+
+.navbar-left,
+.navbar-right {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left li,
+.navbar-right li {
+    padding: 15px 20px; 
+}
+
+.navbar-left .contact-left {
+    margin-right: auto; /*contacto a la izq */
+}
+
+.navbar-left li a,
+.navbar-right li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-secundary);
+    opacity:  0.5;
+
+}
+
+.navbar-left li a:hover,
+.navbar-right li a:hover {
+    color:var(--color-secundary);
+    background-color:var(--color-primary);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Scroll */
+.navbar:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color); 
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.navbar:hover:before {
+    opacity: 1;
+    
+}
+
+body.scrolled .navbar {
+    background-color: var(--color-primary)
+}  
+
+
+/* About Section */
+.section-one{
+    height: 100dvh;    
+    background-image: url(./assests/images/mike-ko-tjod6u2RpiU-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.card {
+    border: 2px white #fafafa10;
+    border-radius: 3%;
+    width: 40rem;
+    height: 30rem;
+    margin: 0 auto; 
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 30%; 
+}
+
+.glass-effect{
+    background-color: var(--glass-effect);
+    backdrop-filter: blur(0.4rem);   
+}
+
+.quotation-mark {
+    width: 20%;
+    position: absolute;
+    top: -20px; 
+    right: -20px; 
+    text-shadow: 2px 5px #000;
+    z-index: 1; 
+} 
+ 
+
+/* Polaroid */
+.polaroid {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    background-color:var(--color-smoke);  
+    top: 35%;
+    left: 300px;
+    border-radius: 10px;
+    filter: grayscale(60%); 
+  }
+
+.polaroid img {
+    width: 100%;
+    border-radius: 10px;
+  }
+.polaroid p{
+    font-family: var(--font-family-four);
+    font-size: 1.5rem;
+    color: var(--color-secundary);
+    text-align: center;
+    top: 15%;
+}
+
+.section-one-text {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section-one-text h3 {
+    font-family: var(--font-family-three);
+    color: var(--color-secundary);
+    margin-top: 55%;
+}
+.section-one-text p{
+    font-family: var(--font-family-two);
+    font-size: 15px;
+    color: var(--color-secundary);   
+    justify-content: center;   
+    padding: 40px 30%;     
+} 
+
+/* Footer */
+.footer{
+    background-color: #4F4F4F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0px 50px;
+
+}
+    
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  .footer-links a {
+    color: black;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+  }
+  .footer-links a:hover {
+    opacity: 1;
+  }
+  .footer .fa-heart {
+    color: #D23333;
+  }
+   
+
+
+/* --------- Contact Section----------- */
+
+
+/* Hero Section */
+.hero-contact-section{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    background-attachment: fixed;
+}
+.video-contact-section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-hero-contact-section h1{
+    font-size: var(--font-size-h1);
+    display: flex;  
+    position: absolute;
+    top: 20%;
+    left: 18%;   
+    color: var(--color-secundary)    
+}
+.withe-line-contactc{
+    width: 15%;
+    height: 1px;
+    background-color: var(--color-secundary);
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    transform: rotate(-90deg);
+} 
+.contact-me-text p{ 
+    color: var(--color-secundary);
+    line-height: 1.5;
+    position: absolute;
+    z-index: 1;
+    margin-left: 30%;
+    margin-top: 25%;
+    margin-bottom: 10%;
+    padding: 10px 20%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+
+/* Navbar Section */
+.navbar-contact-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Roboto Flex';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;  
+}
+
+.navbar-left-contact{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+.navbar-left-contact li{
+    padding: 15px 20px; 
+}
+.navbar-left-contact li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-secundary);
+  
+
+}
+.navbar-left-contact li a:hover{
+    color:var(--color-primary);
+    background-color:var(--color-secundary);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+} 
+
+/* Section Contact Me */
+.section-contact-me {
+    position: relative;
+    overflow: hidden;
+    height: 100dvh;
+    background-color: var(--color-primary);
+}
+
+.half-section {
+    width: 50%;
+    float: right; /* Use float to make the figure and text appear side by side */
+    position: relative; 
+}
+
+.texture-black {
+    width: 100%;
+    height: auto;
+    display: block;
+      
+}
+.texture-photo{
+    width: 250px;
+    opacity: 0.4;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    z-index: 1;
+
+}
+.half-section-two{
+    background-color: var(--color-primary);
+    float: left;
+    width: 50%;
+} 
+
+.hero-life{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assests/images/circulo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -20px;    
+    background-attachment: fixed;
+}
