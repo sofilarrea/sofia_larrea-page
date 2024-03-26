@@ -23,24 +23,20 @@ nav {
     display: block;
     display: flex;
     align-items: center;
-    gap: 20px;
-    box-shadow: rgb(0 0 250);
+    gap: 10px;
 }
-.home .h:hover{
-    
-    color: var(--color-primary);
+.home .h:hover{   
+    color:white;
     cursor: pointer;
-
-
 }
 .navbar-links li a:hover{
-    color:var(--color-primary);
-    background-color: var(--color-secundary);
+    color: whitesmoke;
+    width: 150px; 
 }
 
 /* Section One */
 .polaroid{
-    top: 24%;
+    top: 23%;
     right: 220%;
     width: 250px;
     height: 330px;
@@ -55,13 +51,20 @@ nav {
 }
 
 .section-one-text h3{
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     margin-bottom: 0;
 }
 .section-one-text p{
     padding: 0 3px;
     font-size: 1rem;
 }
+.glass-effect{
+    height: 400px;
+}
+.quotation-mark{
+    width: 20%;
+}
+
 
 /* Media Querys */
 @media screen and (min-width: 1440px) {
@@ -184,14 +187,17 @@ nav {
 
 .form-contact {
     flex: 5; 
-    float: right;
+    float: left;
+    margin: 20px auto;
 }
 
 .half-section {
     display: flex;
     flex-direction: column;
     flex: 1; 
-    float: left;
+    float: right;
+    width: 350px;
+    height: 500px;
 }
 
 
@@ -199,12 +205,14 @@ nav {
 .half-section figure:first-of-type img {
     width: 350px;    
     top: 19%;
+    left: 5%;
+    position: relatice;
 }
 
 .half-section figure:last-of-type img {
     position: absolute;
     right: 5%;
-    bottom: 17%;
+    bottom: 36%;
     left: auto;
     opacity: 0.4;
     width: 250px;
@@ -214,6 +222,8 @@ nav {
 @media screen and (min-width: 1440px) {
     .half-section figure:first-of-type img{
         position: relative;
+        width: 400px;
+        top: 10%;
     }
     .section-contact-me{
         overflow: hidden;
@@ -263,7 +273,9 @@ nav {
 
 /* Header letters in the hero*/
 .portfolio ul li{
-    font-size: 3.1rem;    
+    font-size: 5rem;   
+    left: 17%; 
+    position: relative;
 }
 
 .Jobs-Front hr,

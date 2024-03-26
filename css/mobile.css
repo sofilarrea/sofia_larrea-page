@@ -99,7 +99,7 @@ nav {
     letter-spacing: 1px;   
 } 
 .navbar-links li a {
-    padding: 80px 80px;
+    padding: 80px 20px;
 }
 
 nav ul {
@@ -206,11 +206,11 @@ nav ul {
 .section-one-text h3 {
     font-family: var(--font-family-three);
     color: var(--color-secundary);   
-    font-size: 15px;
+    font-size: 18px;
 }
 .section-one-text p{
     font-family: var(--font-family-two);
-    font-size: 14px;
+    font-size: 12px;
     color: var(--color-secundary);   
     justify-content: center;   
     padding: 10px 20%;     
@@ -342,6 +342,7 @@ nav ul {
 
 .half-section {
     display: none; /* Saco imagnes para mobile y dejo form */
+    
 }
 
 .form-contact {
@@ -360,6 +361,35 @@ nav ul {
 .form {
     margin: 0;
 }
+
+.whatssapp-container {
+    font-size: 2rem;
+    bottom: 0;
+    right: 70px;  
+    position: relative;
+    
+}
+.whatssapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 70px;
+    height: 70px;  
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.whatssapp-container a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+   
+}
+
 
 /* Image */
 .half-section-two figure:last-of-type img {
@@ -519,8 +549,7 @@ input[type="submit"]:visited {
 .Jobs-Back {
     background-image: linear-gradient(rgba(0, 0, 0, 0.773), rgba(0, 0, 0, 0.4)), url('/assests/images/tela.jpg');
     background-position: no-repeat;
-    background-size: cover;
-    height: 100dvh;
+    background-size: cover;  
     width: 100%;
     position: relative;
     padding: 50px 0;
@@ -564,15 +593,11 @@ input[type="submit"]:visited {
 .cincosentidos:link,
 .dioliva:link,
 .africa:link {
-    color: rgb(7, 7, 243);
+    color: rgb(156, 156, 233);
     text-transform: uppercase;
     font-size: 0.9rem;
 }
-.cincosentidos:visited,
-.dioliva:visited,
-.africa:visited {
-    color: rgb(247, 14, 14);
-}
+
 .cincosentidos:hover,
 .dioliva:hover,
 .africa:hover{
@@ -585,6 +610,7 @@ input[type="submit"]:visited {
     object-fit: cover;
     height: 100%;
     border-radius: 10px;
+    overflow: auto;
 }
 .Jobs-Front p:last-child,
 .Oil p:last-child,

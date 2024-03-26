@@ -1,60 +1,53 @@
-function hacerZoomEnFoto(elemento) {
-    // Aumentar el tamaño de la foto
-    elemento.style.transform = "scale(2)"; // Puedes ajustar el nivel de zoom aquí
-
-    // Cambiar el cursor al hacer hover
-    elemento.style.cursor = "move";
-
-    // Habilitar el desplazamiento (panning)
-    let isDragging = false;
-    let startX, startY, startLeft, startTop;
-
-    elemento.addEventListener("mousedown", function(event) {
-        isDragging = true;
-        startX = event.clientX;
-        startY = event.clientY;
-        startLeft = elemento.offsetLeft;
-        startTop = elemento.offsetTop;
-    });
-
-    elemento.addEventListener("mouseup", function() {
-        isDragging = false;
-    });
-
-    elemento.addEventListener("mousemove", function(event) {
-        if (isDragging) {
-            const offsetX = event.clientX - startX;
-            const offsetY = event.clientY - startY;
-            elemento.style.left = startLeft + offsetX + "px";
-            elemento.style.top = startTop + offsetY + "px";
-        }
-    });
-
-    // Deshacer el zoom y desplazamiento al hacer clic de nuevo
-    elemento.addEventListener("click", function() {
-        resetearZoom(elemento);
-    });
-}
-
-function resetearZoom(elemento) {
-    // Restablecer el tamaño de la foto
-    elemento.style.transform = "";
-    elemento.style.left = "";
-    elemento.style.top = "";
-
-    // Restablecer el cursor
-    elemento.style.cursor = "";
-
-    // Remover el listener para evitar múltiples clics
-    elemento.removeEventListener("click", resetearZoom);
-}
 
 // Uso de la función para hacer zoom en la foto al hacer clic
 let imagePortfolio = document.getElementById("image");
 let imagePortfolio2 = document.getElementById("imageAceite");   
 let imagePortfolio3 = document.getElementById("imageAfrica");
 
-imagePortfolio.addEventListener("click", function() {
-    hacerZoomEnFoto(imagePortfolio);
+// Obtener todas las imágenes con la clase "zoomable"
+let images = document.querySelectorAll(".zoomable");
+
+// Zoom in al hacer clic
+images.forEach(image => {
+    image.addEventListener("click", function() {
+        if (!image.classList.contains("zoomed")) {
+            image.style.transform = "scale(2.5)";
+            image.classList.add("zoomed");
+        } else {
+            // Zoom out si ya está ampliado
+            image.style.transform = "scale(1)";
+            image.classList.remove("zoomed");
+        }
+    });
 });
 
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let message = document.getElementById('message').value;
+    let data = {
+        name,
+        email,
+        message
+    };
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append('Accept', 'application/json');
+    fetch('https://apx-api.vercel.app/api/utils/dwf', {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(result => {
+        console.log('Success:', result);
+        document.getElementById('contactForm').reset();
+        alert('Mensaje enviado correctamente');
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Ocurrió un error al enviar el mensaje');
+    });
+}
