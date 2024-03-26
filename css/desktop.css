@@ -211,23 +211,34 @@ nav {
 
 .half-section figure:last-of-type img {
     position: absolute;
-    right: 5%;
+    right: 15%;
     bottom: 36%;
-    left: auto;
+    right: 20%;
     opacity: 0.4;
     width: 250px;
     height: 350px;
 }
 
 @media screen and (min-width: 1440px) {
+    .form-contact {
+        margin: 20px auto;
+        width: 50%;
+
+    }
+
+
     .half-section figure:first-of-type img{
-        position: relative;
         width: 400px;
-        top: 10%;
+        position: relative;
+        top: 13%;
+        right: 15%;
     }
-    .section-contact-me{
-        overflow: hidden;
+    half-section figure:last-of-type img {
+        width: 300px;
+        height: 400px;
+        right: 23%;
     }
+ 
     .intro-contact p{
         font-size: 2rem;
     }
