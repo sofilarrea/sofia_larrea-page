@@ -78,15 +78,6 @@
     left: 35%;
 }
 
-.half-section figure:last-of-type img {
-    left: 69%;
-    bottom: 0;
-    width: 400px;
-    height: 652px;
-    animation: pulse;
-    animation-duration: 4s;
-} 
-
 
 
 
