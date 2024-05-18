@@ -77,7 +77,11 @@
     top: 20%;
     left: 35%;
 }
-
+.form-contact {
+    top: 10%;
+    width: 30%;
+    display: flex;
+}
 
 
 
