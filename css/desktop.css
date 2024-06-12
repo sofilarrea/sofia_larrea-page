@@ -161,49 +161,54 @@ nav {
         font-size: 3rem;
     }
 }
+/* sectio two*/
 
+.polaroidd{
+    display: block ;
 
-
-/* ---------------------------------- */
-/* --------- Contact Page ---------- */
-/* ---------------------------------- */
-
-.withe-line-contact{
-    width: 20%;
-    top: 45%;
-}
-.intro-contact p{
-    top: 25%
-}
-.section-contact-me {
-    display: flex;
-    flex-direction: column;
 }
 
-.full-section {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
+/*section three*/
+.figma{
+    width: 400px;
 }
+.figma p{
+    font-size: 1.3rem;
 
-.form-contact {
-    flex: 5; 
-    float: left;
-    margin: 20px auto;
-    width: 750px;
 }
-
-.half-section {
-    display: flex;
-    flex-direction: column;
-    flex: 1; 
-    float: right;
-    width: 750px;
+.david{
+    width: 400px;
+    left: 15%;
+}
+.wordpress,
+.programming{
+    width: 400px;
+}
+.ada-tutora{
+    width: 400px;
+}
+.rollo{
+    left: -14%;
+    width: 228px;
+    position: absolute;
+    top: -13%;
+    transform: rotate(339deg);
+}
+.photo1{
+    width: 400px;
   
 }
+.astronauta{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 400px;
+}
+.vans{
+    position: absolute;
 
-
-
+}
 .half-section figure:first-of-type img {
     top: 19%;
     left: 45%;

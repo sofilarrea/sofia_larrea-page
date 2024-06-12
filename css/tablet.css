@@ -38,6 +38,7 @@
 .card{
     position: relative;
     width: 500px;
+    top: 17%;
 }
 
 /* Polaroid */
@@ -59,76 +60,32 @@
     font-size: 1.2rem;
 }
 
+/* SECTION THREE */
+.frase-title{
+    color: wheat;
+    display: block;
 
-/* ---------------------------------- */
-/* --------- Contact Page ---------- */
-/* ---------------------------------- */
-
-/* Navbar & Hero */
-
-.home a{
-    font-size: 28px;
 }
-
-.withe-line-contact{
-    top: 40%;
+.astronauta{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 19%;
+    width: 300px;
 }
-.intro-contact p {
-    top: 20%;
-    left: 35%;
+.david{
+    position: absolute;
+    top: 60%;
+    width: 201px;
+    left: 44%;
 }
-.form-contact {
-    top: 10%;
-    width: 30%;
-    display: flex;
+.vans{
+    left: 57%;
 }
-
-
-
-
-
-/* ---------------------------------- */
-/* --------- Portfolio Page ---------- */
-/* ---------------------------------- */
-
-
-/* Haro Navbar */
-.portfolio li{
-    font-size: 3rem;
-    padding: 0 20px;
+.hands{
+    width: 190px;
 }
-.list-port a {
-    font-size: 2rem;
-}
-
-/* Jobs Front */
-
-.Jobs-Front h2,
-.Jobs-Back h2 {
-    font-size: 2.3rem;
-    margin: 0;
-}
-.Jobs-Back br,
-.Jobs-Front br {
-    display: none;
-}
-.bodega p,
-.aceite p,
-.africa p {
-    font-size: 1.3rem;
-    padding: 0 5%;
-}   
-.bodega figure,
-.aceite figure,
-.africa figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bodega figure img,
-.aceite figure img,
-.africa figure img {
-    max-width: 60%;
-    max-height: 50%;
-    
+.photo1{
+    position: absolute;
+    bottom: 3%;
 }

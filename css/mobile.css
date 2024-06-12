@@ -170,9 +170,9 @@ nav ul {
 .polaroid {
     position: relative;
     width: 150px;
-    padding: 15px;
+    padding: 7px;
     background-color:rgb(25, 24, 24);  
-    top: 35%;
+    top: 31%;
     left: 10px;
     border-radius: 10px;
     filter: grayscale(60%);
@@ -194,8 +194,8 @@ nav ul {
 .section-one-text {
     position: absolute;
     width: 250px;
-    left: 35%;
-    top: 30%;
+    left: 25%;
+    top: 27%;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -210,7 +210,7 @@ nav ul {
 }
 .section-one-text p{
     font-family: var(--font-family-two);
-    font-size: 12px;
+    font-size: 1rem;
     color: var(--color-secundary);   
     justify-content: center;   
     padding: 10px 20%;     
@@ -242,10 +242,10 @@ nav ul {
     transform: translateZ(0);
     will-change: transform; /* Hint to the browser to optimize rendering */
 }
-
+/* SECTION THREE */
 .section-three {
     position: relative;
-    height: 100vh;
+    height: 400vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,38 +253,150 @@ nav ul {
     background-size: cover;
     background-position: center;
 }
-
-.quote-container {
-    position: relative;
+.figma {
+    background-color: #000;
+    width: 270px;
+    height: 460px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.frase {
+    flex-direction: column;
+    padding: 10px;
     position: absolute;
-    top: 25%; /* Adjust as necessary */
+    border-radius: 5px;
+    top: 3%;
+    left: 4%;
+}
+.david{
+    position: absolute;
+    top: 60%;
+    width: 150px;
+    left: 67%;
+
+}
+.figma p,
+.wordpress p{
+    color: white;
+    font-size: 1.2rem;
+    font-family: var(--font-family-two);
+    padding: 10px 0;
     text-align: center;
-    z-index: 2; /* Ensure the text is above the image */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.wordpress p{
+    top: 15%;
+    position: relative;
+}
+.wordpress{
+    background-color: #000;
+    width: 270px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    border-radius: 5px;
+    top: 38%;
+    left: 30%;
+}
+.moon{
+    width: 393px;
+    height: 350px;   
+    position: absolute;
+    top: -19%;
+    left: -69%;
+    transform: rotate(144deg);
+}
+.blanco a,
+.blanco-wordpress a,
+.blanco-programming a,
+.blanco-ada-tutor a{
+    color: white;
+    font-style: italic;
+    padding: 10px;
+}
+.blanco-wordpress a{
+    position: relative;
+    bottom: -445%;
+}
+.programming{
+    background-color: #000;
+    width: 270px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    border-radius: 5px;
+    top: 66%;
+    left: 3%;
 }
 
-.frase h3 {
+.hands{
+    width: 200px;
+    position: absolute;
+    top: -5%;
+    transform: rotate(339deg);
+}
+.programming p{
     color: white;
-    font-family: var(--font-family-three);
-    font-size: 2rem; /* Adjust as necessary */
+    top: 45%;
+    position: relative;
+}
+.blanco-programming a{
+    top: 185%;
+    position: relative;
 }
 
-.link p{
-    color: white;
-    font-size: 2rem;
+.dog{
+    width: 290px;
+    position: absolute;
 }
-.link a{
+.frase{
+    display: none;
+}
+.vans{
+    display: none;
+}
+.ada-tutor figure img{
+    width: 250px;
+    transform: rotate(328deg);
+    position: absolute;
+    top:-15%;
+    left: -20%;
+}
+.astronauta{
+    display: none;
+
+}
+.ada-tutor{
+    background-color: #000;
+    width: 270px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    border-radius: 5px;
+    top: 22%;
+    left: 33%;
+}
+.ada-tutor p{
     color: white;
-    text-decoration: none;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
-    font-size: 1.8rem;
-    line-height: 43px;
+    position: relative;
+    top: 32%;
+    font-family: var(--font-family-two);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+.blanco-ada-tutor{
+    color: white;
+    font-size: 1.2rem;
+    font-family: var(--font-family-two);
+    padding: 10px 0;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+  
 }
 
 /* Footer */
@@ -300,6 +412,8 @@ nav ul {
     background-size: cover;
     position: relative;
 }
+
+
 
 .footer-link a,
 .footer p {
